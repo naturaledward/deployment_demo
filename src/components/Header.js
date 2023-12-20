@@ -93,6 +93,7 @@ const Header = () => {
               {/* onClick handler, handleClick, is now useless */}
               <a href="/#projects-section" onClick={handleClick("projects")}>Projects</a>
               <a href="/#contactme-section" onClick={handleClick("contactme")}>Contact Me</a>
+              <a href="/#contactme-section">delete</a>
             </HStack>
           </nav>
         </HStack>
