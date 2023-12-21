@@ -6,16 +6,26 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin, faMedium, faStackOverflow, } from "@fortawesome/free-brands-svg-icons";
 import { Box, HStack } from "@chakra-ui/react";
 const socials = [
-  { icon: faEnvelope,
-    url: "mailto: hello@example.com", },
-  { icon: faGithub,
-    url: "https://github.com", },
-  { icon: faLinkedin,
-    url: "https://www.linkedin.com", },
-  { icon: faMedium,
-    url: "https://medium.com", },
-  { icon: faStackOverflow,
-    url: "https://stackoverflow.com", }, ];
+  {
+    icon: faEnvelope,
+    url: "mailto: hello@example.com",
+  },
+  {
+    icon: faGithub,
+    url: "https://github.com",
+  },
+  {
+    icon: faLinkedin,
+    url: "https://www.linkedin.com",
+  },
+  {
+    icon: faMedium,
+    url: "https://medium.com",
+  },
+  {
+    icon: faStackOverflow,
+    url: "https://stackoverflow.com",
+  },];
 const Header = () => {
   const handleClick = anchor => () => {
     const id = `${anchor}-section`;
@@ -24,7 +34,10 @@ const Header = () => {
       // console.log(element)
       element.scrollIntoView({
         behavior: "smooth",
-        block: "start", }); } };
+        block: "start",
+      });
+    }
+  };
   return (
     <Box
       position="fixed"
